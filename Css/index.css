@@ -1,0 +1,79 @@
+@import 'normalize.css';
+:root {
+	--orange: #d2872c;
+	--gray: #766f68;
+}
+
+.nav-item a {
+	text-decoration: none;
+	color: var(--gray);
+}
+
+a.navbar-brand {
+	color: var(--orange);
+}
+
+@media screen and (max-width: 1600px) and (min-width: 798px) {
+	.main-block {
+		display: -webkit-flex;
+		/* Safari */
+		display: flex;
+		flex-direction: row;
+	}
+
+	.text-block {
+		width: 50%;
+		position: absolute;
+		font-weight: bolder;
+		color: var(--gray);
+		border: 1px solid red;
+	}
+
+	.img-block {
+		width: 50%;
+		margin-left: auto;
+	}
+}
+
+@media screen and (max-width: 798px) and (min-width: 300px) {
+	.main-block {
+		display: -webkit-flex;
+		/* Safari */
+		display: flex;
+		flex-direction: column;
+	}
+
+	.text-block {
+		width: 100%;
+		border: 1px solid red;
+	}
+
+	.create {
+		font-size: 40px;
+		text-align: center;
+		font-weight: bolder;
+		color: var(--gray);
+	}
+
+	.colaborate {
+		font-size: 20px;
+		text-align: center;
+		font-weight: lighter;
+		color: black;
+	}
+
+	.img-block {
+		width: 100%;
+	}
+
+	.btn-start {
+		background-color: var(--orange);
+		border-radius: 5px;
+		max-width: 150px;
+		text-align: center;
+		padding: 10px;
+		margin: 0 auto;
+		font-size: 15px;
+		color: white;
+	}
+}
